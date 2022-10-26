@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{473D8A93-A8E9-47F7-A4CA-BCF0B08D52C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Academy</RootNamespace>
+    <AssemblyName>Academy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons\Icon %282%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Academy.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlphaBlendTextBox">
+      <HintPath>.\AlphaBlendTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.barcodes, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.commons, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.commons.7.2.4\lib\net461\itext.commons.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.forms, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.io, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.io.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.kernel, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.layout, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.layout.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfa, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.sign, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.sign.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.styledxmlparser, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.styledxmlparser.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.svg, Version=7.2.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\itext7.7.2.4\lib\net461\itext.svg.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=6.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.6.0.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.6.0.0\lib\net461\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=6.0.0.2, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.6.0.2\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Options.6.0.0\lib\net461\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Extensions.Primitives.6.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.116.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.116.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.EF6.1.0.116.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.116.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SQLite.Linq.1.0.116.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.6.0.0\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Banco.cs" />
+    <Compile Include="Classes\Global.cs" />
+    <Compile Include="Classes\Program.cs" />
+    <Compile Include="Classes\Usercontrolblank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Usercontrolblank.Designer.cs">
+      <DependentUpon>Usercontrolblank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FHome.Designer.cs">
+      <DependentUpon>FHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FCMeals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FCMeals.Designer.cs">
+      <DependentUpon>FCMeals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FWT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FWT.Designer.cs">
+      <DependentUpon>FWT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FACM2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FACM2.Designer.cs">
+      <DependentUpon>FACM2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FEP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FEP.Designer.cs">
+      <DependentUpon>FEP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FAM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FAM.Designer.cs">
+      <DependentUpon>FAM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FMS.Designer.cs">
+      <DependentUpon>FMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FAEI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FAEI.Designer.cs">
+      <DependentUpon>FAEI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FEEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FEEL.Designer.cs">
+      <DependentUpon>FEEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FEE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FEE.Designer.cs">
+      <DependentUpon>FEE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FES_ASDAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FES_ASDAY.Designer.cs">
+      <DependentUpon>FES_ASDAY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FCredits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FCredits.Designer.cs">
+      <DependentUpon>FCredits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FES_DAY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FES_DAY.Designer.cs">
+      <DependentUpon>FES_DAY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FES_ASYNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FES_ASYNC.Designer.cs">
+      <DependentUpon>FES_ASYNC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FES_SYNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FES_SYNC.Designer.cs">
+      <DependentUpon>FES_SYNC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FES.Designer.cs">
+      <DependentUpon>FES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FAW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FAW.Designer.cs">
+      <DependentUpon>FAW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FEW.Designer.cs">
+      <DependentUpon>FEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FSettings.Designer.cs">
+      <DependentUpon>FSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FAnalytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FAnalytics.Designer.cs">
+      <DependentUpon>FAnalytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FCalendar.Designer.cs">
+      <DependentUpon>FCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FWorkout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\FWorkout.Designer.cs">
+      <DependentUpon>FWorkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pages\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Classes\Usercontrolblank.resx">
+      <DependentUpon>Usercontrolblank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classes\UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FHome.resx">
+      <DependentUpon>FHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FCMeals.resx">
+      <DependentUpon>FCMeals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FWT.resx">
+      <DependentUpon>FWT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FACM2.resx">
+      <DependentUpon>FACM2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FAM.resx">
+      <DependentUpon>FAM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FEP.resx">
+      <DependentUpon>FEP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FMS.resx">
+      <DependentUpon>FMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FAEI.resx">
+      <DependentUpon>FAEI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FEEL.resx">
+      <DependentUpon>FEEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FEE.resx">
+      <DependentUpon>FEE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FCredits.resx">
+      <DependentUpon>FCredits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FES_ASDAY.resx">
+      <DependentUpon>FES_ASDAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FES_DAY.resx">
+      <DependentUpon>FES_DAY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FES.resx">
+      <DependentUpon>FES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FAW.resx">
+      <DependentUpon>FAW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FES_ASYNC.resx">
+      <DependentUpon>FES_ASYNC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FES_SYNC.resx">
+      <DependentUpon>FES_SYNC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FEW.resx">
+      <DependentUpon>FEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FAnalytics.resx">
+      <DependentUpon>FAnalytics.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FCalendar.resx">
+      <DependentUpon>FCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FSettings.resx">
+      <DependentUpon>FSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\FWorkout.resx">
+      <DependentUpon>FWorkout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\dumbbell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\analytics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-analytics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.png" />
+    <None Include="icons\logout2.png" />
+    <None Include="icons\Logout1.png" />
+    <None Include="icons\Logout.png" />
+    <None Include="icons\Next_y.png" />
+    <None Include="icons\Previous_y.png" />
+    <None Include="icons\Previous_m.png" />
+    <None Include="icons\Next_m.png" />
+    <None Include="Resources\hidden11.png" />
+    <None Include="Resources\hidden1.png" />
+    <None Include="Resources\view1.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\user11.png" />
+    <None Include="icons\login2.png" />
+    <None Include="icons\login1.png" />
+    <None Include="Resources\analytics-Recovered.png" />
+    <None Include="Resources\Login.png" />
+    <None Include="icons\analytics8.png" />
+    <None Include="icons\calendar1.png" />
+    <None Include="icons\dumbbell1.png" />
+    <None Include="icons\exit1.png" />
+    <None Include="icons\Clicked_Next_m.png" />
+    <None Include="icons\Clicked_Next_y.png" />
+    <None Include="icons\Clicked_Previous_m.png" />
+    <None Include="icons\Clicked_Previous_y.png" />
+    <None Include="icons\credits.png" />
+    <None Include="icons\home.png" />
+    <Content Include="icons\Icon %282%29.ico" />
+    <None Include="icons\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+    <Error Condition="!Exists('packages\Microsoft.Extensions.Logging.Abstractions.6.0.2\build\Microsoft.Extensions.Logging.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.Extensions.Logging.Abstractions.6.0.2\build\Microsoft.Extensions.Logging.Abstractions.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.116.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Import Project="packages\Microsoft.Extensions.Logging.Abstractions.6.0.2\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('packages\Microsoft.Extensions.Logging.Abstractions.6.0.2\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
+</Project>
