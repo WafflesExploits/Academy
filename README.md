@@ -83,6 +83,7 @@
  <h3 align="center"><strong>
    Unfinished</strong>
 </h3>
+* Due to an error of the SQLite Library on Visual Studio, Academy may only be open through the Visual Studio Project.
 
 
 ## Room for Improvement
