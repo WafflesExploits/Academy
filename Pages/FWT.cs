@@ -51,7 +51,9 @@ namespace Academy
             if(DGV.SelectedRows.Count == 0) { return; }
             
             Weight = decimal.Parse(DGV.SelectedRows[0].Cells[0].Value.ToString());
+            decimal Fat = decimal.Parse(DGV.SelectedRows[0].Cells[1].Value.ToString());
             Banco.dml($"Update tb_physique SET N_WEIGHT='{Weight}'");
+            Banco.dml($"Update tb_calmacros SET N_TDEE='{Fat}'");
             GetThings();
             GetTWT();
             DGVReload();

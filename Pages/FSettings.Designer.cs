@@ -216,6 +216,7 @@ namespace Academy
             this.B_Delete.TabIndex = 183;
             this.B_Delete.Text = "Delete account";
             this.B_Delete.UseVisualStyleBackColor = false;
+            this.B_Delete.Click += new System.EventHandler(this.B_Delete_Click);
             // 
             // label5
             // 

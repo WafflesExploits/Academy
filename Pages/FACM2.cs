@@ -85,9 +85,9 @@ namespace Academy
             switch (goal)
             {
                 case 'R':
-                    TRB_PI.Maximum = 220;
+                    TRB_PI.Maximum = 320;
                     TRB_PI.Minimum = 180;
-                    LB_PIMax.Text = "2.2";
+                    LB_PIMax.Text = "3.2";
                     LB_PIMin.Text = "1.8";
 
                     TRB_FI.Maximum = 25;
@@ -105,9 +105,9 @@ namespace Academy
                     break;
                 case 'B':
 
-                    TRB_PI.Maximum = 220;
+                    TRB_PI.Maximum = 320;
                     TRB_PI.Minimum = 160;
-                    LB_PIMax.Text = "2.2";
+                    LB_PIMax.Text = "3.2";
                     LB_PIMin.Text = "1.6";
 
                     TRB_FI.Maximum = 25;
@@ -464,9 +464,9 @@ namespace Academy
                 case 'R':
                     GetTDEE();
                     
-                    TRB_PI.Maximum = 220;
+                    TRB_PI.Maximum = 320;
                     TRB_PI.Minimum = 180;
-                    LB_PIMax.Text = "2.2";
+                    LB_PIMax.Text = "3.2";
                     LB_PIMin.Text = "1.8";
 
                     TRB_FI.Maximum = 25;
@@ -487,9 +487,9 @@ namespace Academy
                 case 'B':
                     GetTDEE();
                     
-                    TRB_PI.Maximum = 220;
+                    TRB_PI.Maximum = 320;
                     TRB_PI.Minimum = 160;
-                    LB_PIMax.Text = "2.2";
+                    LB_PIMax.Text = "3.2";
                     LB_PIMin.Text = "1.6";
 
                     TRB_FI.Maximum = 25;

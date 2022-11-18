@@ -210,10 +210,10 @@
     <Compile Include="Classes\UserControlDays.Designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
-    <Compile Include="FAF.cs">
+    <Compile Include="Pages\FAF.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FAF.Designer.cs">
+    <Compile Include="Pages\FAF.Designer.cs">
       <DependentUpon>FAF.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\FHome.cs">
@@ -367,7 +367,7 @@
     <EmbeddedResource Include="Classes\UserControlDays.resx">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FAF.resx">
+    <EmbeddedResource Include="Pages\FAF.resx">
       <DependentUpon>FAF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\FHome.resx">

@@ -63,5 +63,10 @@ namespace Academy
         {
 
         }
+
+        private void B_Delete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

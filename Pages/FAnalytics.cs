@@ -531,7 +531,14 @@ namespace Academy
 
         private void LB_CMFat1_Click(object sender, EventArgs e)
         {
+            FAF faf = new FAF(FAT, TDEE, false);
+            faf.ShowDialog();
+        }
 
+        private void LB_CMFat2_Click(object sender, EventArgs e)
+        {
+            FAF faf = new FAF(FAT, TDEE, true);
+            faf.ShowDialog();
         }
 
         private Color GetColor(int Percentage)
