@@ -81,14 +81,16 @@
 
 ## Project Status
  <h3 align="center"><strong>
-   Work in progress</strong>
+   Unfinished</strong>
 </h3>
+* Due to an error of the SQLite Library on Visual Studio, Academy may only be open through the Visual Studio Project.
 
 
 ## Room for Improvement
 - Overall design -> The design at the start was more aesthetically pleasant but it evolved to a more efficient one to consume less time.
 - Round buttons -> Was unable to add round buttons on the project without crashing it.
 - Fixed Resolution -> Didn't take to account multiple resolutions that could be used while running academy.
+- SQLite -> Couldn't find dlls for SQLite.Interop, so the programm doesn't run without being in Visual Studio, this being the reason the project is and will be unfinished.
 
 ## Note
 - Calories are calculted via TDEE formula:
