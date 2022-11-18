@@ -47,6 +47,7 @@
     - Ingredients Editor
   - Macros Calculator:
     - Calories Calculator
+    - Types of Fat Calculator
     - Gym Goals:
       - Bulking
       - Recomp/Maingain
