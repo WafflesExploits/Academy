@@ -34,6 +34,7 @@
 - .NET Framework - version 4.7.2
 - Visual Studio 2022 - Community Edition
 - C#
+- SQLite
 
 
 ## Features
