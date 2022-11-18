@@ -3,7 +3,7 @@
   <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{473D8A93-A8E9-47F7-A4CA-BCF0B08D52C1}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -210,6 +210,12 @@
     <Compile Include="Classes\UserControlDays.Designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
+    <Compile Include="FAF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAF.Designer.cs">
+      <DependentUpon>FAF.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\FHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -360,6 +366,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Classes\UserControlDays.resx">
       <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAF.resx">
+      <DependentUpon>FAF.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\FHome.resx">
       <DependentUpon>FHome.cs</DependentUpon>

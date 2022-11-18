@@ -2843,6 +2843,8 @@ namespace Academy
             this.LB_CMFat1.Size = new System.Drawing.Size(132, 27);
             this.LB_CMFat1.TabIndex = 187;
             this.LB_CMFat1.Text = "Fat - [ ] ";
+            this.toolTip1.SetToolTip(this.LB_CMFat1, "Click to types of fats");
+            this.LB_CMFat1.Click += new System.EventHandler(this.LB_CMFat1_Click);
             // 
             // LB_CMProtein1
             // 

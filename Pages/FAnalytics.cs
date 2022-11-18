@@ -529,6 +529,11 @@ namespace Academy
             GetMacrosAverage();
         }
 
+        private void LB_CMFat1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private Color GetColor(int Percentage)
         {
             /* Color Bad = Color.FromArgb(255, 0, 0); // < 25
