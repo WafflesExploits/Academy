@@ -71,7 +71,7 @@
 
 ## Setup
 - Build the project on Visual Studio and run Academy yourself.
-- This is the only way to run Academy, because unable to create a setup installer because of a broken DLL SQLite library.
+- This is the only way to run Academy, because of a broken DLL SQLite library that breaks the programm during setup installation.
 - Download the project <a href="https://github.com/WafflesExploit/Academy/releases/tag/Release">here</a>-
 ## Usage
 - Academy can be used to assist you in your gym goals.
