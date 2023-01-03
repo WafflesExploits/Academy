@@ -70,13 +70,8 @@
 </details>
 
 ## Setup
-- Build the project on Visual Studio and run Academy yourself
-
-**OR**
-
-- Install the latest released build through here:
-  (_Still working towards a somewhat finished build to released it here_)
-
+- Build the project on Visual Studio and run Academy yourself.
+- This is the only way to run Academy, because unable to create a setup installer because of a broken DLL SQLite library.
 ## Usage
 - Academy can be used to assist you in your gym goals.
 - Be it macros and calories, workouts or even planning your day, Academy is there **for you**.
