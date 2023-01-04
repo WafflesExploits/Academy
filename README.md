@@ -6,9 +6,7 @@
 <h3 align="center">
   > Academy is a fitness app prototype built on VisualStudio with C# and .NET Framework
 </h3>
-<h3 align="center">
- > Live demo <a href="https://www.example.com">here</a>. <!-- If you have the project hosted somewhere, include the link here. -->
-</h3>
+
 
 ## Table of Contents
 * [General Info](#general-information)
