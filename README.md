@@ -71,7 +71,7 @@
 
 ## Setup
 - Build the project on Visual Studio and run Academy yourself.
-- This is the only way to run Academy, because of a broken DLL SQLite library that breaks the programm during setup installation.
+- Due to an error of the SQLite Library on Visual Studio, Academy may only be open through the Visual Studio Project.
 - Download the project <a href="https://github.com/WafflesExploit/Academy/releases/tag/Release">here</a>-
 ## Usage
 - Academy can be used to assist you in your gym goals.
@@ -79,10 +79,8 @@
 
 ## Project Status
  <h3 align="center"><strong>
-   Finished</strong>
+   Unfinished</strong>
 </h3>
-* Due to an error of the SQLite Library on Visual Studio, Academy may only be open through the Visual Studio Project.
-
 
 ## Room for Improvement
 - Overall design -> The design at the start was more aesthetically pleasant but it evolved to a more efficient one to consume less time.
