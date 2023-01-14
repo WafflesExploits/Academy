@@ -77,7 +77,7 @@
 
 ## Project Status
  <h3 align="center"><strong>
-   Unfinished</strong>
+   Finished</strong>
 </h3>
 
 ## Room for Improvement
