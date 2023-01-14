@@ -69,11 +69,28 @@
   <img height="250" alt="Workout Planner" src="https://user-images.githubusercontent.com/15943431/212475233-c075216e-5e1f-4bdd-8b12-9298dceff416.png">
 </details>
 <details>
-  <summary>Workout Planner:</summary>
-  <img height="250" alt="Workout Planner" src="https://user-images.githubusercontent.com/15943431/212475233-c075216e-5e1f-4bdd-8b12-9298dceff416.png">
+  <summary>Calendar:</summary>
+  <img height="250" alt="Calendar" src="https://user-images.githubusercontent.com/15943431/212476167-2f68cc6b-ff45-4370-9a30-e7521ce7665b.png">
+  <details>
+    <summary>Synchronous Workout Plans:</summary> 
+    <img height="250" alt="Sync Calendar" src="https://user-images.githubusercontent.com/15943431/212476203-21a668c0-55cb-4bc5-9f68-19e5d1238413.png"> 
+    <img height="250" alt="Sync Calendar" src="https://user-images.githubusercontent.com/15943431/212476206-0b0645a2-ce73-48b5-a189-eff534f1116f.png"> 
+  </details>
+   <details>
+    <summary>Assynchronous Workout Plans:</summary> 
+    <img height="250" alt="Async Calendar" src="https://user-images.githubusercontent.com/15943431/212476269-325ce4dd-8a7b-4197-acb6-61fd61c320fc.png"> 
+    <img height="250" alt="Async Calendar" src="https://user-images.githubusercontent.com/15943431/212476273-f330a416-0220-4fba-9667-ecf6f8249e13.png"> 
+  </details>
+  <details>
+    <summary>Events Editor Plans:</summary> 
+    <img height="250" alt="Event Add" src="https://user-images.githubusercontent.com/15943431/212476326-cd977652-708a-41dc-97d3-9c02a05ddfb8.png"> 
+    <img height="250" alt="Event Editor" src="https://user-images.githubusercontent.com/15943431/212476321-76b3101d-3af5-4dd9-b4b2-f3382a39c794.png"> 
+  </details>
 </details>
-
-
+<details>
+  <summary>Analytics:</summary>
+  <img height="250" alt="Meal Planner" src="https://user-images.githubusercontent.com/15943431/212477291-b14b8624-7a42-450c-9723-c4691e9e1b2a.png">
+</details>
 
 ## Setup
 - Build the project on Visual Studio and run Academy yourself.
