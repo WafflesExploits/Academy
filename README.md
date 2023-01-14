@@ -36,6 +36,7 @@
 
 
 ## Features
+- Home Page (Unfinished)
 - Workout Planner
 - Calendar:
   - Workout Schedules
@@ -55,13 +56,19 @@
   - Physique: 
     - BMI Calculator
     - Ideal Weight Calculator
+ - Settings (Unfinished)
  - Credits
 
 ## Screenshots
 <details>
-  <summary>Workout Planner:</summary>
-  <img width="992" alt="Screenshot_1" src="https://user-images.githubusercontent.com/15943431/195325017-a49581bf-01ea-46d8-bbb3-af42dc944b1f.png">
+  <summary>Login Screen:</summary>
+  <img width="992" alt="Login Screen" src="https://user-images.githubusercontent.com/15943431/212474231-19cb2d64-0797-4492-8f66-5e45f8969081.png">
 </details>
+<details>
+  <summary>Login Screen:</summary>
+  <img width="992" alt="Login Screen" src="https://user-images.githubusercontent.com/15943431/212474231-19cb2d64-0797-4492-8f66-5e45f8969081.png">
+</details>
+
 
 ## Setup
 - Build the project on Visual Studio and run Academy yourself.
@@ -76,6 +83,8 @@
    Finished</strong>
 </h3>
 
+# Conclusion
+> There are many things I think I would have done differently if I were to start over, or even just fix.
 ## Room for Improvement
 - Overall design -> The design at the start was more aesthetically pleasant but it evolved to a more efficient one to consume less time.
 - Round buttons -> Was unable to add round buttons on the project without crashing it.
