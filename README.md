@@ -62,7 +62,7 @@
 ## Screenshots
 <details>
   <summary>Login Screen:</summary>
-  <img width="992" alt="Login Screen" src="https://user-images.githubusercontent.com/15943431/212474231-19cb2d64-0797-4492-8f66-5e45f8969081.png">
+  <img alt="Login Screen" src="https://user-images.githubusercontent.com/15943431/212474231-19cb2d64-0797-4492-8f66-5e45f8969081.png">
 </details>
 <details>
   <summary>Login Screen:</summary>
