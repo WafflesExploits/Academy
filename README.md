@@ -55,10 +55,6 @@
   - Physique: 
     - BMI Calculator
     - Ideal Weight Calculator
- - Print to PDF:
-   - Meal Plan with Macro Goals
-   - Workouts Plans
-   - Workout Schedules
  - Credits
 
 ## Screenshots
