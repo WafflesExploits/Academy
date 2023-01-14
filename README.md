@@ -62,12 +62,17 @@
 ## Screenshots
 <details>
   <summary>Login Screen:</summary>
-  <img alt="Login Screen" src="https://user-images.githubusercontent.com/15943431/212474231-19cb2d64-0797-4492-8f66-5e45f8969081.png">
+  <img height="250" alt="Login Screen" src="https://user-images.githubusercontent.com/15943431/212474231-19cb2d64-0797-4492-8f66-5e45f8969081.png">
 </details>
 <details>
-  <summary>Login Screen:</summary>
-  <img width="992" alt="Login Screen" src="https://user-images.githubusercontent.com/15943431/212474231-19cb2d64-0797-4492-8f66-5e45f8969081.png">
+  <summary>Workout Planner:</summary>
+  <img height="250" alt="Workout Planner" src="https://user-images.githubusercontent.com/15943431/212475233-c075216e-5e1f-4bdd-8b12-9298dceff416.png">
 </details>
+<details>
+  <summary>Workout Planner:</summary>
+  <img height="250" alt="Workout Planner" src="https://user-images.githubusercontent.com/15943431/212475233-c075216e-5e1f-4bdd-8b12-9298dceff416.png">
+</details>
+
 
 
 ## Setup
@@ -84,7 +89,12 @@
 </h3>
 
 # Conclusion
-> There are many things I think I would have done differently if I were to start over, or even just fix.
+<center>
+There are many things I think I would have done differently if I were to start over. 
+First, I wouldn't try to pursue such an ambitious idea in VS 22 (Visual Studio). The Program is great for small projects and learning C++/C#, but everytime I would try to fix a bug, another one would appear just because of trying to open the project in VS 22. So, when you start to have more than 10000 Lines of code it becomes practically impossible to fix every bug, if they just keep appearing. 
+Thus, I will not fix or upgrade this project anymore since it has every main feature I imagined in my head, so I'm happy with how it ended. Even if it could be better.
+</center>
+
 ## Room for Improvement
 - Overall design -> The design at the start was more aesthetically pleasant but it evolved to a more efficient one to consume less time.
 - Round buttons -> Was unable to add round buttons on the project without crashing it.
