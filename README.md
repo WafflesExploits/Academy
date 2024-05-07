@@ -4,7 +4,7 @@
 </h1>
 
 <h3 align="center">
-  > Academy is a fitness app prototype built on VisualStudio with C# and .NET Framework with SQLite Database
+  > Academy is a fitness app prototype built on VisualStudio using C# and .NET Framework with SQLite Database
 </h3>
 
 
