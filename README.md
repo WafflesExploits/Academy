@@ -95,7 +95,7 @@
 ## Setup
 - Build the project on Visual Studio and run Academy yourself.
 - Due to an error of the SQLite Library on Visual Studio, Academy may only be open through the Visual Studio Project.
-- Download the project <a href="https://github.com/WafflesExploit/Academy/releases/tag/Release">here</a>.
+- Download the project <a href="https://github.com/WafflesExploits/Academy/releases/tag/Release">here</a>.
 ## Usage
 - Academy can be used to assist you in your gym goals.
 - Be it macros and calories, workouts or even planning your day, Academy is there **for you**.
