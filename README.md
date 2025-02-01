@@ -134,6 +134,6 @@ Thus, I will not fix or upgrade this project anymore since it has every main fea
           BMR X 1.9: Extra Active: Very hard daily exercise or physical job
     ```
 ## Contact
-Created by [@WafflesExploit](https://github.com/WafflesExploit) - feel free to contact me!
+Created by [@WafflesExploits](https://github.com/WafflesExploits) - feel free to contact me!
 
 
