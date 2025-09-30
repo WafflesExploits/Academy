@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  A comprehensive fitness & nutrition app built with C# and .NET Framework
+  A comprehensive fitness & nutrition app built with C#, .NET, and SQLite.
 </h3>
 
 ## Overview
