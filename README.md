@@ -1,126 +1,163 @@
-
 <h1 align="center">
   <img alt="Academy" title="Academy" src="https://user-images.githubusercontent.com/15943431/195387627-725db6ee-60e3-4a4b-bcf9-ffc441f30438.png" />
 </h1>
 
 <h3 align="center">
-  > Academy is a fitness app built on Visual Studio using C# and .NET Framework with SQLite Database
+  A comprehensive fitness app built with C# and .NET Framework
 </h3>
 
+## Overview
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Note](#note)
-* [Contact](#contact)
-<!-- * [License](#license) -->
+Academy is a desktop fitness management application designed to help bodybuilders and fitness enthusiasts organize every aspect of their fitness journey. From workout planning to macro calculations and meal scheduling, Academy provides a complete suite of tools for managing your fitness goals.
 
-
-## General Information
-- Academy helps with every bodybuilder needs, workout planning, macros calculation, meal planning and more. 
-- This project was made with the intent of polishing my C# and SQLite Skills and, at the same time, creating a useful project to be used daily by myself and anyone
-  who wants a fitness app to organize their life for free.
-
-
-## Technologies Used
-- .NET Framework - version 4.7.2
-- Visual Studio 2022 - Community Edition
-- C#
-- SQLite
-
-
-## Features
-- Home Page (Unfinished)
-- Workout Planner
-- Calendar:
-  - Workout Schedules
-  - Assynchronous and Synchronous Workout Plans
-  - Events Reminder (e.g. Mr. Olympia)
-- Analytics:
-  - Meal Planner: (2-6 Meals/Day)
-    - Ingredients Editor
-  - Macros Calculator:
-    - Calories Calculator
-    - Types of Fat Calculator
-    - Gym Goals:
-      - Bulking
-      - Recomp/Maingain
-      - Cutting
-    - Weight Target Table
-  - Physique: 
-    - BMI Calculator
-    - Ideal Weight Calculator
- - Settings (Unfinished)
- - Credits
-
-## Screenshots
-  <summary>Login Screen:</summary>
-  <img height="250" alt="Login Screen" src="https://user-images.githubusercontent.com/15943431/212474231-19cb2d64-0797-4492-8f66-5e45f8969081.png">
-  <summary>Workout Planner:</summary>
-  <img height="250" alt="Workout Planner" src="https://user-images.githubusercontent.com/15943431/212475233-c075216e-5e1f-4bdd-8b12-9298dceff416.png">
-  <summary>Calendar:</summary>
-  <img height="250" alt="Calendar" src="https://user-images.githubusercontent.com/15943431/212476167-2f68cc6b-ff45-4370-9a30-e7521ce7665b.png">
-    <summary>Synchronous Workout Plans:</summary> 
-    <img height="250" alt="Sync Calendar" src="https://user-images.githubusercontent.com/15943431/212476203-21a668c0-55cb-4bc5-9f68-19e5d1238413.png"> 
-    <img height="250" alt="Sync Calendar" src="https://user-images.githubusercontent.com/15943431/212476206-0b0645a2-ce73-48b5-a189-eff534f1116f.png"> 
-    <summary>Assynchronous Workout Plans:</summary> 
-    <img height="250" alt="Async Calendar" src="https://user-images.githubusercontent.com/15943431/212476269-325ce4dd-8a7b-4197-acb6-61fd61c320fc.png"> 
-    <img height="250" alt="Async Calendar" src="https://user-images.githubusercontent.com/15943431/212476273-f330a416-0220-4fba-9667-ecf6f8249e13.png"> 
-    <summary>Events Editor Plans:</summary> 
-    <img height="250" alt="Event Add" src="https://user-images.githubusercontent.com/15943431/212476326-cd977652-708a-41dc-97d3-9c02a05ddfb8.png"> 
-    <img height="250" alt="Event Editor" src="https://user-images.githubusercontent.com/15943431/212476321-76b3101d-3af5-4dd9-b4b2-f3382a39c794.png"> 
-</details>
-  <summary>Analytics:</summary>
-  <img height="250" alt="Meal Planner" src="https://user-images.githubusercontent.com/15943431/212477291-b14b8624-7a42-450c-9723-c4691e9e1b2a.png">
-
-## Setup
-- Build the project on Visual Studio and run Academy yourself.
-- Due to an error of the SQLite Library on Visual Studio, Academy may only be open through the Visual Studio Project.
-- Download the project <a href="https://github.com/WafflesExploits/Academy/releases/tag/Release">here</a>.
-## Usage
-- Academy can be used to assist you in your gym goals.
-- Be it macros and calories, workouts or even planning your day, Academy is there **for you**.
+This project was developed to polish C# and SQLite skills while creating a practical, free tool for daily fitness & nutrition management.
 
 ## Project Status
- <h3 align="center"><strong>
-   Finished</strong>
-</h3>
 
-# Conclusion
-<center>
-There are many things I think I would have done differently if I were to start over. 
-First, I wouldn't try to pursue such an ambitious idea in VS 22 (Visual Studio). The Program is great for small projects and learning C++/C#, but everytime I would try to fix a bug, another one would appear just because of trying to open the project in VS 22. So, when you start to have more than 10000 Lines of code it becomes practically impossible to fix every bug, if they just keep appearing. 
-Thus, I will not fix or upgrade this project anymore since it has every main feature I imagined in my head, so I'm happy with how it ended. Even if it could be better.
-</center>
+**Status:** Completed
 
-## Room for Improvement
-- Overall design -> The design at the start was more aesthetically pleasant but it evolved to a more efficient one to consume less time.
-- Round buttons -> Was unable to add round buttons on the project without crashing it.
-- Fixed Resolution -> Didn't take to account multiple resolutions that could be used while running academy.
-- SQLite -> Couldn't find dlls for SQLite.Interop, so the programm doesn't run without being in Visual Studio, this being the reason the project will remain unfinished.
+## Technology Stack
 
-## Note
-- Calories are calculted via TDEE formula:
-    ```  
-    TDEE = BMR*BMRM 
-       Mifflin St. Jeor BMR Formula:
-         Men:   BMR = 10*Weight + 6.25*Height - 5*Age + 5
-         Women: BMR = 10*Weight + 6.25*Height - 5*Age - 161
-       BMR Multipliers (BMRM):
-          BMR X 1.2: Sedentary: little to no exercise
-          BMR X 1.375: Slightly Active: exercise 1-3 days/week
-          BMR X 1.465: Moderate Active: exercise 3-4 days/week
-          BMR X 1.55: Active: Intense exercise 4-5 days/week
-          BMR X 1.725: Very Active: intense exercise 6-7 days/week
-          BMR X 1.9: Extra Active: Very hard daily exercise or physical job
-    ```
+- **.NET Framework** - version 4.7.2
+- **Visual Studio 2022** - Community Edition
+- **C#** - Core programming language
+- **SQLite** - Database management
+
+## Features
+
+### Core Functionality
+
+**Workout Planning**
+- Custom workout routine builder
+- Exercise library and management
+- Rep and set tracking
+
+**Calendar System**
+- Workout schedule management
+- Synchronous workout plans (fixed weekly schedules)
+- Asynchronous workout plans (flexible scheduling)
+- Event reminders (competitions, important dates)
+
+**Analytics Suite**
+
+*Meal Planning*
+- 2-6 meals per day configuration
+- Custom ingredients editor
+- Nutritional tracking
+
+*Macros Calculator*
+- TDEE-based calorie calculations
+- Fat type breakdown
+- Goal-specific planning:
+  - Bulking protocols
+  - Recomposition/Maingain
+  - Cutting strategies
+- Weight target progression tables
+
+*Physique Tracking*
+- BMI calculator
+- Ideal weight calculator
+- Progress monitoring
+
+**Additional Features**
+- User authentication system
+- Settings configuration
+- Credits and attribution
+
+## Screenshots
+
+### Login Interface
+- <img height="250" alt="Login Screen" src="https://user-images.githubusercontent.com/15943431/212474231-19cb2d64-0797-4492-8f66-5e45f8969081.png">
+
+### Workout Planner
+- <img height="250" alt="Workout Planner" src="https://user-images.githubusercontent.com/15943431/212475233-c075216e-5e1f-4bdd-8b12-9298dceff416.png">
+
+### Calendar Views
+
+**Main Calendar**
+- <img height="250" alt="Calendar" src="https://user-images.githubusercontent.com/15943431/212476167-2f68cc6b-ff45-4370-9a30-e7521ce7665b.png">
+
+**Synchronous Plans**
+- <img height="250" alt="Sync Calendar" src="https://user-images.githubusercontent.com/15943431/212476203-21a668c0-55cb-4bc5-9f68-19e5d1238413.png">
+- <img height="250" alt="Sync Calendar" src="https://user-images.githubusercontent.com/15943431/212476206-0b0645a2-ce73-48b5-a189-eff534f1116f.png">
+
+**Asynchronous Plans**
+- <img height="250" alt="Async Calendar" src="https://user-images.githubusercontent.com/15943431/212476269-325ce4dd-8a7b-4197-acb6-61fd61c320fc.png">
+- <img height="250" alt="Async Calendar" src="https://user-images.githubusercontent.com/15943431/212476273-f330a416-0220-4fba-9667-ecf6f8249e13.png">
+
+**Event Management**
+- <img height="250" alt="Event Add" src="https://user-images.githubusercontent.com/15943431/212476326-cd977652-708a-41dc-97d3-9c02a05ddfb8.png">
+- <img height="250" alt="Event Editor" src="https://user-images.githubusercontent.com/15943431/212476321-76b3101d-3af5-4dd9-b4b2-f3382a39c794.png">
+
+### Analytics Dashboard
+- <img height="250" alt="Meal Planner" src="https://user-images.githubusercontent.com/15943431/212477291-b14b8624-7a42-450c-9723-c4691e9e1b2a.png">
+
+## Installation & Setup
+
+**Download:** [Latest Release](https://github.com/WafflesExploits/Academy/releases/tag/Release)
+
+### Building from Source
+
+1. Clone the repository
+2. Open the project in Visual Studio 2022
+3. Build and run the solution
+
+**Important Note:** Due to SQLite library limitations in Visual Studio, Academy currently requires the Visual Studio environment to run properly. The standalone executable may not function correctly due to missing SQLite.Interop DLLs.
+
+## Usage
+
+Academy assists with:
+- **Macro and calorie tracking** - Precise nutritional planning based on your goals
+- **Workout organization** - Structured training programs
+- **Daily planning** - Schedule management and reminders
+- **Progress tracking** - Monitor your fitness journey
+
+## Calorie Calculation Methodology
+
+Academy uses the Mifflin St. Jeor equation for BMR calculation:
+
+```
+TDEE = BMR × Activity Multiplier
+
+BMR Formulas:
+  Men:   BMR = 10×Weight + 6.25×Height - 5×Age + 5
+  Women: BMR = 10×Weight + 6.25×Height - 5×Age - 161
+
+Activity Multipliers:
+  1.2   - Sedentary (little to no exercise)
+  1.375 - Lightly Active (exercise 1-3 days/week)
+  1.465 - Moderately Active (exercise 3-4 days/week)
+  1.55  - Active (intense exercise 4-5 days/week)
+  1.725 - Very Active (intense exercise 6-7 days/week)
+  1.9   - Extra Active (very hard daily exercise or physical job)
+```
+
+
+## Project Reflection
+
+While Visual Studio is excellent for learning, scaling to 10,000+ lines revealed significant IDE-specific challenges and bug persistence. Despite these limitations, Academy successfully achieved all envisioned core features and serves its intended purpose as a comprehensive fitness management tool.
+
+### Known Limitations
+
+**Technical Constraints:**
+- SQLite dependencies prevent standalone execution outside Visual Studio
+- Fixed resolution UI design
+- Requires Visual Studio environment to run
+
+**Design Trade-offs:**
+- UI evolved from aesthetic focus to efficiency-driven design
+- Some components (rounded buttons) couldn't be implemented due to stability issues
+
+### Key Takeaways
+
+- Choose development environments that scale with project complexity
+- Resolve library dependencies early for standalone distribution
+- Balance aesthetic goals with practical implementation constraints
+- Define realistic feature boundaries from the start
+
+**Note:** This project is complete and won't receive further updates. Future iterations would benefit from responsive UI design, proper dependency packaging, modern frameworks (WPF, Avalonia), and cross-platform compatibility.
+
 ## Contact
-Created by [@WafflesExploits](https://github.com/WafflesExploits) - feel free to contact me!
+Created by [@AndreCrafts](https://github.com/andrecrafts)
 
-
+Feel free to explore the codebase and reach out with questions or feedback!
