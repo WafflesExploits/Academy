@@ -3,12 +3,12 @@
 </h1>
 
 <h3 align="center">
-  A comprehensive fitness app built with C# and .NET Framework
+  A comprehensive fitness & nutrition app built with C# and .NET Framework
 </h3>
 
 ## Overview
 
-Academy is a desktop fitness management application designed to help bodybuilders and fitness enthusiasts organize every aspect of their fitness journey. From workout planning to macro calculations and meal scheduling, Academy provides a complete suite of tools for managing your fitness goals.
+Academy is a desktop fitness & nutrition management application designed to help bodybuilders and fitness enthusiasts organize every aspect of their fitness journey. From workout planning to macro calculations and meal scheduling, Academy provides a complete suite of tools for managing your fitness goals.
 
 This project was developed to polish C# and SQLite skills while creating a practical, free tool for daily fitness & nutrition management.
 
