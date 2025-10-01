@@ -94,7 +94,7 @@ This project was developed to polish C# and SQLite skills while creating a pract
 
 ## Installation & Setup
 
-**Download:** [Latest Release](https://github.com/WafflesExploits/Academy/releases/tag/Release)
+**Download:** [Latest Release](https://github.com/andrecrafts/Academy/releases/tag/Release)
 
 ### Building from Source
 
